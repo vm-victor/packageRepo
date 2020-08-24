@@ -1,3 +1,5 @@
+package com.vehiclemind.test;
+
 import org.springframework.stereotype.Component;
 
 @Component

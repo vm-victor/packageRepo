@@ -2,15 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>vehiclemind</artifactId>
-        <groupId>com.vehiclemind</groupId>
-        <version>0.9</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.vehiclemind</groupId>
     <artifactId>test-module</artifactId>
+    <version>${revision}</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.9.RELEASE</version>
+        </dependency>
+    </dependencies>
 
+    <properties>
+        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring-boot.version>2.0.0.RELEASE</spring-boot.version>
+        <src.dir>src/main/java</src.dir>
+        <revision>1.02</revision>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/vm-victor/test-module</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
